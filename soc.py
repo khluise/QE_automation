@@ -2458,14 +2458,14 @@ def extract_data_from_vc_relax_output(output_file, start_pattern, end_pattern):
    
 def get_tuned_scf():
         
-    # suggested_kp_x, suggested_kp_y, suggested_kp_z, suggested_ecutwfc, suggested_degauss = check_convergence()  
-    # print(suggested_degauss)
-    suggested_kp_x = 9 
-    suggested_kp_y = 9
-    suggested_kp_z = 8
-    suggested_ecutwfc = 50
-    suggested_degauss = 0.020
-    suggested_degauss = f"{suggested_degauss:.3f}"
+    suggested_kp_x, suggested_kp_y, suggested_kp_z, suggested_ecutwfc, suggested_degauss = check_convergence()  
+    print(suggested_degauss)
+    # suggested_kp_x = 9 
+    # suggested_kp_y = 9
+    # suggested_kp_z = 8
+    # suggested_ecutwfc = 50
+    # suggested_degauss = 0.020
+    # suggested_degauss = f"{suggested_degauss:.3f}"
     
     # Save current working directory
     original_cwd = os.getcwd()
